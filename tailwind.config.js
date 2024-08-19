@@ -1,9 +1,9 @@
 const elementsSizes = {
-  xs: '24px',
-  sm: '32px',
-  base: '42px',
-  lg: '52px',
-  xl: '64px',
+  xs: '30px',
+  sm: '40px',
+  base: '50px',
+  lg: '60px',
+  xl: '70px',
 }
 
 const headingStyles = {
@@ -50,7 +50,8 @@ module.exports = {
       default: withOpacity('--default-rgb'),
     },
     fontFamily: {
-      base: "'Gilroy', arial, helvetica, sans-serif",
+      base: "'Inter', arial, helvetica, sans-serif",
+      alt: "'Akrobat', arial, helvetica, sans-serif",
     },
     zIndex: [0, 321, 322, 323, 324, 325, 326, 327, 328, 329, 'auto'],
     extend: {

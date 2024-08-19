@@ -1,5 +1,119 @@
 <%= require('./html-includes/header.html')() %>
 
-<div class="doc"></div>
+<header class="header">
+  <a href="javascript:;" class="header-logo">
+    <img src="img/logo.svg" alt="">
+  </a>
+
+  <a href="javascript:;" class="btn btn-text gap-2 hover-underline-wrapper max-lg:hidden">
+    <c-icon class="icon text-2xl text-primary " href="img/icons.svg#map-point"></c-icon>
+    <div class="font-medium hover-underline text-[15px]">г. Краснодар, ул. Северная 490</div>
+  </a>
+  <a href="javascript:;" class="btn btn-text gap-2 hover-underline-wrapper max-lg:hidden">
+    <c-icon class="icon text-2xl text-primary " href="img/icons.svg#email"></c-icon>
+    <div class="font-medium hover-underline text-[15px]">marketing_consulting@arverresult.store</div>
+  </a>
+
+  <div class="max-xs:hidden">
+    <div class="flex gap-2">
+      <button class="btn btn-text">
+        <img src="img/vk.svg" alt="" class="icon text-3.5xl">
+      </button>
+      <button class="btn btn-text">
+        <img src="img/telegram.svg" alt="" class="icon text-3.5xl">
+      </button>
+      <button class="btn btn-text">
+        <img src="img/instagram.svg" alt="" class="icon text-3.5xl">
+      </button>
+    </div>
+  </div>
+
+  <button class="btn btn-text hover-underline">
+    <span class="font-alt text-xl sm:text-3xl font-black">8 900 000 18 49</span>
+  </button>
+</header>
+
+<section class="nav max-lg:hidden">
+  <button class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm">
+    <div class="text-[15px] text-default">Главная</div>
+  </button>
+  <button class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm">
+    <div class="text-[15px] text-default">О компании</div>
+  </button>
+  <button class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm">
+    <div class="text-[15px] text-default">Услуги</div>
+  </button>
+  <button class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm">
+    <div class="text-[15px] text-default">Портфолио</div>
+  </button>
+  <button class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm">
+    <div class="text-[15px] text-default">Расчет стоимости</div>
+  </button>
+  <button class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm">
+    <div class="text-[15px] text-default">Контакты</div>
+  </button>
+  <button class="btn btn-fill btn-sec grow btn-sm">
+    <div class="text-[15px] font-bold">Обратная связь</div>
+  </button>
+</section>
+
+<div class="started-wrapper">
+  <section class="started">
+    <div class="started-image">
+      <picture>
+        <source media="(min-width: 1199.98px)" srcset="img/started.png">
+        <img src="img/started-sm.png" alt="">
+      </picture>
+    </div>
+    <div class="started-content">
+      <div class="started-title title">
+        Маркетинг, <br>
+        оптимизация, <br>
+        консалтинг
+      </div>
+      <div class="mt-4 max-sm:text-sm">
+        Лидирующее, экспертное и динамически <br>
+        развивающееся агентство маркетинговых <br>
+        и консалтинговых услуг в сфере малого, <br>
+        среднего и крупного бизнесов
+      </div>
+      <button class="btn btn-fill btn-sec mt-11">
+        <div class="font-bold">Узнать подробнее</div>
+      </button>
+    </div>
+  </section>
+
+  <section class="about rounded-section">
+    <div class="about-image">
+      <picture>
+        <source media="(min-width: 1199.98px)" srcset="img/about.png">
+        <img src="img/about-sm.png" alt="">
+      </picture>
+    </div>
+    <div class="about-content">
+      <div class="title ">Adver Result</div>
+      <div class="title px-3 bg-sec rounded-xl mb-5 sm:mb-11 w-max text-white">& Consulting</div>
+
+      <div class="max-lg:text-sm">
+        Компания позиционирует себя как эксперта <br class="max-sm:hidden">
+        и профессионального стратега в развитии <br class="max-sm:hidden">
+        партнерских предприятий, предоставляя лучшие <br class="max-sm:hidden">
+        индивидуальные решения в маркетинге, рекламе, <br class="max-sm:hidden">
+        аналитике и консультации бизнес-процессов.
+        <br><br>
+        <span class="font-semibold">
+          Adver Result & Consulting – надежный партнер <br class="max-sm:hidden">
+          в лице экспертов с заслуженной репутацией, <br class="max-sm:hidden">
+          проверенной временем, сложными задачами <br class="max-sm:hidden">
+          и обстоятельствами
+        </span>
+      </div>
+
+      <button class="btn btn-primary btn-contur border-default/20 mt-8 sm:mt-15">
+        <span class="font-bold text-default">Наши услуги</span>
+      </button>
+    </div>
+  </section>
+</div>
 
 <%= require('./html-includes/footer.html')() %>
