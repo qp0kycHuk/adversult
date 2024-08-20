@@ -42,6 +42,7 @@ module.exports = {
       red: withOpacity('--red-rgb'),
       green: withOpacity('--green-rgb'),
       yellow: withOpacity('--yellow-rgb'),
+      orange: withOpacity('--orange-rgb'),
       white: withOpacity('--white-rgb'),
       black: withOpacity('--black-rgb'),
       l1: withOpacity('--bg1-rgb'),
@@ -72,6 +73,9 @@ module.exports = {
         '3.5xl': ['2rem', '1.35'],
         '4.5xl': ['2.5rem', '1.35'],
       },
+      lineHeight: {
+        xs: '1.1'
+      }
     },
   },
   plugins: [
