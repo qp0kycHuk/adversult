@@ -1,9 +1,14 @@
 <%= require('./html-includes/header.html')() %>
-
+<div id="top"></div>
 <header class="header">
-  <a href="javascript:;" class="header-logo">
-    <img src="img/logo.svg" alt="">
-  </a>
+  <div class="flex items-center gap-3">
+    <button class="btn btn-text btn-sec lg:hidden" data-toggle-link="menu">
+      <c-icon class="icon" href="img/icons.svg#menu"></c-icon>
+    </button>
+    <a href="/#top" data-scroll class="header-logo">
+      <img src="img/logo.svg" alt="">
+    </a>
+  </div>
 
   <a href="javascript:;" class="btn btn-text gap-2 hover-underline-wrapper max-lg:hidden">
     <c-icon class="icon text-2xl text-primary " href="img/icons.svg#map-point"></c-icon>
@@ -28,30 +33,95 @@
     </div>
   </div>
 
-  <button class="btn btn-text hover-underline">
+  <a href="javascript:;" class="btn btn-text hover-underline">
     <span class="font-alt text-xl sm:text-3xl font-black">8 900 000 18 49</span>
-  </button>
+  </a>
 </header>
 
+<div class="menu" id="menu" data-toggle-cover>
+  <div class="header px-4">
+    <div class="flex items-center gap-3">
+      <button class="btn btn-text btn-sec" data-toggle-link="menu">
+        <c-icon class="icon" href="img/icons.svg#cross"></c-icon>
+      </button>
+      <a href="javascript:;" class="header-logo">
+        <img src="img/logo.svg" alt="">
+      </a>
+    </div>
+
+    <button class="btn btn-text hover-underline">
+      <span class="font-alt text-xl font-black">8 900 000 18 49</span>
+    </button>
+  </div>
+  <div class="p-4 flex flex-col gap-4">
+    <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#top">
+      <div class="text-[15px] text-default">Главная</div>
+    </a>
+    <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#about">
+      <div class="text-[15px] text-default">О компании</div>
+    </a>
+    <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#service">
+      <div class="text-[15px] text-default">Услуги</div>
+    </a>
+    <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#reviews">
+      <div class="text-[15px] text-default">Портфолио</div>
+    </a>
+    <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#pray">
+      <div class="text-[15px] text-default">Расчет стоимости</div>
+    </a>
+    <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#contact">
+      <div class="text-[15px] text-default">Контакты</div>
+    </a>
+    <button class="btn btn-fill btn-sec grow btn-sm">
+      <div class="text-[15px] font-bold">Обратная связь</div>
+    </button>
+  </div>
+  <div class="mt-auto"></div>
+  <div class="mt-10 px-4 flex flex-col gap-3">
+    <a href="javascript:;" class="btn btn-text gap-2 hover-underline-wrapper justify-start">
+      <c-icon class="icon text-2xl text-primary " href="img/icons.svg#map-point"></c-icon>
+      <div class="font-medium hover-underline text-[15px]">г. Краснодар, ул. Северная 490</div>
+    </a>
+    <a href="javascript:;" class="btn btn-text gap-2 hover-underline-wrapper justify-start">
+      <c-icon class="icon text-2xl text-primary " href="img/icons.svg#email"></c-icon>
+      <div class="font-medium hover-underline text-[15px]">marketing_consulting@arverresult.store</div>
+    </a>
+  </div>
+  <div class="mt-10 px-4">
+    <div class="flex gap-6">
+      <button class="btn btn-text">
+        <img src="img/vk.svg" alt="" class="icon text-5xl">
+      </button>
+      <button class="btn btn-text">
+        <img src="img/telegram.svg" alt="" class="icon text-5xl">
+      </button>
+      <button class="btn btn-text">
+        <img src="img/instagram.svg" alt="" class="icon text-5xl">
+      </button>
+    </div>
+  </div>
+</div>
+<div class="menu-shadow"></div>
+
 <section class="nav max-lg:hidden">
-  <button class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm">
+  <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll href="/#top">
     <div class="text-[15px] text-default">Главная</div>
-  </button>
-  <button class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm">
+  </a>
+  <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll href="/#about">
     <div class="text-[15px] text-default">О компании</div>
-  </button>
-  <button class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm">
+  </a>
+  <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll href="/#service">
     <div class="text-[15px] text-default">Услуги</div>
-  </button>
-  <button class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm">
+  </a>
+  <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll href="/#reviews">
     <div class="text-[15px] text-default">Портфолио</div>
-  </button>
-  <button class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm">
+  </a>
+  <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll href="/#pray">
     <div class="text-[15px] text-default">Расчет стоимости</div>
-  </button>
-  <button class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm">
+  </a>
+  <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll href="/#contact">
     <div class="text-[15px] text-default">Контакты</div>
-  </button>
+  </a>
   <button class="btn btn-fill btn-sec grow btn-sm">
     <div class="text-[15px] font-bold">Обратная связь</div>
   </button>
@@ -66,24 +136,26 @@
       </picture>
     </div>
     <div class="started-content">
-      <div class="started-title title">
+      <div class="started-title title" data-animation="fadeInUp">
         Маркетинг, <br>
         оптимизация, <br>
         консалтинг
       </div>
-      <div class="mt-4 max-sm:text-sm">
+      <div class="mt-4 max-sm:text-sm" data-animation="fadeInUp" data-delay="0.05">
         Лидирующее, экспертное и динамически <br>
         развивающееся агентство маркетинговых <br>
         и консалтинговых услуг в сфере малого, <br>
         среднего и крупного бизнесов
       </div>
-      <button class="btn btn-fill btn-sec mt-11">
-        <div class="font-bold">Узнать подробнее</div>
-      </button>
+      <div data-animation="fadeInUp" data-delay="0.1">
+        <button class="btn btn-fill btn-sec mt-11">
+          <div class="font-bold">Узнать подробнее</div>
+        </button>
+      </div>
     </div>
   </section>
 
-  <section class="about rounded-section">
+  <section class="about rounded-section" id="about">
     <div class="about-image">
       <picture>
         <source media="(min-width: 1199.98px)" srcset="img/about.png">
@@ -91,37 +163,38 @@
       </picture>
     </div>
     <div class="about-content">
-      <div class="title ">Adver Result</div>
-      <div class="title px-3 bg-sec rounded-xl mb-5 sm:mb-11 w-max text-white">& Consulting</div>
+      <div class="title " data-animation="fadeInUp">Adver Result</div>
+      <div class="title px-3 bg-sec rounded-xl mb-5 sm:mb-11 w-max text-white" data-animation="fadeInUp">& Consulting</div>
 
-      <div class="max-lg:text-sm">
+      <div class="max-lg:text-sm" data-animation="fadeInUp">
         Компания позиционирует себя как эксперта <br class="max-sm:hidden">
         и профессионального стратега в развитии <br class="max-sm:hidden">
         партнерских предприятий, предоставляя лучшие <br class="max-sm:hidden">
         индивидуальные решения в маркетинге, рекламе, <br class="max-sm:hidden">
         аналитике и консультации бизнес-процессов.
         <br><br>
-        <span class="font-semibold">
+        <span class="font-semibold" data-animation="fadeInUp">
           Adver Result & Consulting – надежный партнер <br class="max-sm:hidden">
           в лице экспертов с заслуженной репутацией, <br class="max-sm:hidden">
           проверенной временем, сложными задачами <br class="max-sm:hidden">
           и обстоятельствами
         </span>
       </div>
-
-      <button class="btn btn-primary btn-contur border-default/20 mt-8 sm:mt-15">
-        <span class="font-bold text-default">Наши услуги</span>
-      </button>
+      <div data-animation="fadeInUp">
+        <button class="btn btn-primary btn-contur border-default/20 mt-8 sm:mt-15">
+          <span class="font-bold text-default">Наши услуги</span>
+        </button>
+      </div>
     </div>
   </section>
 </div>
 
-<section class="p-section service">
-  <div class="title sm:text-center mb-6 sm:mb-12">Маркетинговое сопровождение</div>
+<section class="p-section service" id="service">
+  <div class="title sm:text-center mb-6 sm:mb-12" data-animation="fadeInUp">Маркетинговое сопровождение</div>
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-7">
     <% for(let i = 0; i < 3; i++) { %>
-    <div class="service-item">
+    <div class="service-item" data-animation="fadeInUp" data-delay="<%= (i % 3) * 0.05 %>">
       <div class="service-item-image ratio ratio-[390/256]">
         <img src="img/test.gif" alt="" class="absolute-fit object-cover">
       </div>
@@ -145,11 +218,11 @@
   </div>
 </section>
 
-<section class="rounded-section p-section process bg-l3">
-  <div class="title sm:text-center mb-6 sm:mb-12">Оптимизация бизнес – процессов</div>
+<section class="rounded-section p-section process bg-l3" id="process">
+  <div class="title sm:text-center mb-6 sm:mb-12" data-animation="fadeInUp">Оптимизация бизнес – процессов</div>
 
   <div class="process-grid grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-7">
-    <div class="process-item process-item-1 row-span-2">
+    <div class="process-item process-item-1 row-span-2" data-animation="fadeInUp">
       <img src="img/process-1.png" alt="">
       <div class="process-item-content">
         <div class="flex items-center gap-2 mb-3">
@@ -167,7 +240,7 @@
         </button>
       </div>
     </div>
-    <div class="process-item process-item-2">
+    <div class="process-item process-item-2" data-animation="fadeInUp">
       <div class="process-item-content">
         <div class="flex items-center gap-2 mb-3">
           <c-icon class="icon text-2xl opacity-40" href="img/icons.svg#widjet"></c-icon>
@@ -184,7 +257,7 @@
         </button>
       </div>
     </div>
-    <div class="process-item process-item-4 row-span-2">
+    <div class="process-item process-item-4 row-span-2" data-animation="fadeInUp">
       <img src="img/process-4.png" alt="">
       <div class="process-item-content">
         <div class="flex items-center gap-2 mb-3">
@@ -202,7 +275,7 @@
         </button>
       </div>
     </div>
-    <div class="process-item process-item-3">
+    <div class="process-item process-item-3" data-animation="fadeInUp">
       <div class="process-item-content">
         <div class="flex items-center gap-2 mb-3">
           <c-icon class="icon text-2xl opacity-40" href="img/icons.svg#widjet"></c-icon>
@@ -222,11 +295,11 @@
   </div>
 </section>
 
-<section class="consalting p-section">
-  <div class="title sm:text-center mb-6 sm:mb-12">Консалтинг</div>
+<section class="consalting p-section" id="consalting">
+  <div class="title sm:text-center mb-6 sm:mb-12" data-animation="fadeInUp">Консалтинг</div>
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-7">
 
-    <div class="consalting-item bg-l3">
+    <div class="consalting-item bg-l3" data-animation="fadeInUp">
       <div class="consalting-item-header bg-[#CFEAAA] bg-opacity-50">
         <div class="font-alt text-2xl/xs sm:text-3xl/xs font-black uppercase">
           Базовый пакет
@@ -247,7 +320,7 @@
         </button>
       </div>
     </div>
-    <div class="consalting-item bg-l3">
+    <div class="consalting-item bg-l3" data-animation="fadeInUp" data-delay="0.05">
       <div class="consalting-item-header bg-[#A8C3FF] bg-opacity-50">
         <div class="font-alt text-2xl/xs sm:text-3xl/xs font-black uppercase">
           Базовый пакет
@@ -268,7 +341,7 @@
         </button>
       </div>
     </div>
-    <div class="consalting-item bg-[#F9D3B7]">
+    <div class="consalting-item bg-[#F9D3B7]" data-animation="fadeInUp" data-delay="0.1">
       <div class="consalting-item-header bg-[#FFEDDF] bg-opacity-50">
         <c-icon class="icon text-orange text-2xl" href="img/icons.svg#crown"></c-icon>
         <div class="font-alt text-2xl/xs sm:text-3xl/xs font-black uppercase">
@@ -294,18 +367,18 @@
   </div>
 </section>
 
-<section class="consalting p-section bg-l3 overflow-hidden" data-tab-cover>
-  <div class="title sm:text-center mb-6 sm:mb-12">отзывы о нашей работе</div>
+<section class="reviews p-section bg-l3 overflow-hidden" data-tab-cover id="reviews">
+  <div class="title sm:text-center mb-6 sm:mb-12" data-animation="fadeInUp">отзывы о нашей работе</div>
 
 
-  <div class="reviews-tabs">
+  <div class="reviews-tabs" data-animation="fadeInUp">
     <button class="reviews-tab" data-tab-link="0">о безупречной репутации</button>
     <button class="reviews-tab" data-tab-link="1">об окупленных инвестициях</button>
     <button class="reviews-tab" data-tab-link="2">о достигнутых результатах</button>
     <div class="reviews-tabs-plate" data-tab-plate></div>
   </div>
 
-  <div class="relative">
+  <div class="relative" data-animation="fadeInUp">
     <% for(let i = 0; i < 3; i++) { %>
     <div class="tab-content !overflow-visible" data-tab-content="<%= i %>">
       <div class="reviews-slider swiper -mx-1.5 -mx-lg:-mx-3.5 max-md:overflow-visible">
@@ -332,9 +405,9 @@
   })
 </script>
 
-<section class="video lg:px-0 bg-l3 pb-12">
-  <div class="title mb-5 lg:hidden">видео о нас</div>
-  <a href="https://youtu.be/rSDoXnslLsg" data-fancybox class="video-block rounded-section ratio ratio-4/3 sm:ratio-16/9 lg:ratio-[1824/784] px-0 block">
+<section class="video lg:px-0 bg-l3 pb-12" id="video">
+  <div class="title mb-5 lg:hidden" data-animation="fadeInUp">видео о нас</div>
+  <a href="https://youtu.be/rSDoXnslLsg" data-animation="fadeInUp" data-fancybox class="video-block rounded-section ratio ratio-4/3 sm:ratio-16/9 lg:ratio-[1824/784] px-0 block">
     <img src="img/video.jpg" alt="" class="absolute-fit object-cover">
 
     <div class="absolute-fit video-content">
@@ -346,14 +419,14 @@
   </a>
 </section>
 
-<section class="pray p-section">
+<section class="pray p-section" id="pray">
   <div class="pray-block">
     <div class="pray-content grow">
-      <div class="font-alt font-black text-4xl/xs md:text-[52px]/xs uppercase mb-6">
+      <div class="font-alt font-black text-4xl/xs md:text-[52px]/xs uppercase mb-6" data-animation="fadeInUp">
         Расчет индивидуальной <br>
         стоимости предложения
       </div>
-      <div class="grid sm:grid-cols-2 gap-6">
+      <div class="grid sm:grid-cols-2 gap-6" data-animation="fadeInUp">
         <label class="block">
           <div class="font-semibold mb-2">
             Ваше имя
@@ -373,7 +446,7 @@
           <textarea class="input h-36 w-full"></textarea>
         </label>
       </div>
-      <div class="mt-8 flex sm:items-center gap-5 max-sm:flex-col">
+      <div class="mt-8 flex sm:items-center gap-5 max-sm:flex-col" data-animation="fadeInUp">
         <button class="btn btn-sec btn-fill">
           <span class="font-bold">Отправить заявку</span>
         </button>
@@ -383,7 +456,7 @@
         </a>
       </div>
     </div>
-    <div class="pray-review">
+    <div class="pray-review" data-animation="fadeInUp">
       <div class="flex items-center gap-4">
         <img src="img/logo-min.svg" alt="" class="icon text-2.5xl sm:text-4.5xl">
         <div class="font-bold text-lg sm:text-2xl">Что говорят наши клиенты</div>
@@ -416,24 +489,24 @@
 
 </section>
 
-<section class="p-section contact">
-  <div class="title sm:text-center mb-6 sm:mb-14">наши контакты</div>
+<section class="p-section contact" id="contact">
+  <div class="title sm:text-center mb-6 sm:mb-14" data-animation="fadeInUp">наши контакты</div>
   <div class="contact-grid gap-4 sm:gap-7">
-    <a href="javascript:;" class="contact-item">
+    <a href="javascript:;" class="contact-item" data-animation="fadeInUp">
       <c-icon class="icon text-3.5xl sm:text-4.5xl text-[#FFCA57]" href="img/icons.svg#building"></c-icon>
       <div>
         <div class="opacity-60 max-sm:text-sm">Адрес офиса</div>
         <div class="font-alt font-black sm:text-xl uppercase">г. Краснодар, ул. Северная 490</div>
       </div>
     </a>
-    <a href="javascript:;" class="contact-item max-lg:col-span-full max-lg:order-10">
+    <a href="javascript:;" class="contact-item max-lg:col-span-full max-lg:order-10" data-animation="fadeInUp" data-delay="0.05">
       <c-icon class="icon text-3.5xl sm:text-4.5xl text-[#449BFF]" href="img/icons.svg#email"></c-icon>
       <div>
         <div class="opacity-60 max-sm:text-sm">E-mail</div>
         <div class="font-alt font-black sm:text-xl uppercase">marketing_consulting@arverresult.store</div>
       </div>
     </a>
-    <a href="javascript:;" class="contact-item grow">
+    <a href="javascript:;" class="contact-item grow" data-animation="fadeInUp" data-delay="0.1">
       <c-icon class="icon text-3.5xl sm:text-4.5xl text-[#68E47F]" href="img/icons.svg#phone"></c-icon>
       <div>
         <div class="opacity-60 max-sm:text-sm">Телефон</div>
@@ -446,7 +519,7 @@
 <div class="map" id="map"></div>
 
 <footer class="footer">
-  <a href="javascript:;" class="footer-logo">
+  <a href="/#top" data-scroll class="footer-logo">
     <img src="img/logo-light.svg" alt="">
   </a>
   <div class="opacity-60">ИП Токарев Дмитрий Сергеевич</div>
