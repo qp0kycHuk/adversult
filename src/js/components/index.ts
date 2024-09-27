@@ -1,4 +1,5 @@
 import counter from './counter'
+import datepicker from './datepicker'
 import icon from './icon'
 import menu from './menu/menu'
 import menuButton from './menu/menuButton'
@@ -10,6 +11,7 @@ function registerAll() {
   menu.register()
   menuItems.register()
   menuButton.register()
+  datepicker.register()
 }
 
 registerAll()

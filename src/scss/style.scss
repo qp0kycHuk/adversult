@@ -193,7 +193,7 @@ body {
 
 .nav {
   display       : flex;
-  gap           : 28px;
+  gap           : 12px;
   padding-top   : 8px;
   padding-bottom: 20px;
   background    : theme('colors.l3');
@@ -713,6 +713,11 @@ body {
   }
 }
 
+.dialog-payment {
+  padding: 48px 48px 64px;
+  width  : 584px;
+}
+
 .menu {
   position      : fixed;
   left          : 0;
@@ -748,4 +753,34 @@ body {
 
 [data-animation] {
   opacity: 0;
+}
+
+.air-datepicker {
+  --adp-cell-background-color-selected      : theme('colors.sec');
+  --adp-cell-background-color-selected-hover: theme('colors.sec');
+  --adp-color-current-date                  : theme('colors.sec');
+  --adp-day-name-color                      : theme('colors.yellow');
+}
+
+.air-datepicker-global-container {
+  z-index: 1100;
+}
+
+.tabs {
+  display      : flex;
+  border-bottom: 1px solid theme('colors.default / 10%');
+}
+
+.tab {
+  padding-top   : 20px;
+  padding-bottom: 20px;
+  font-size     : 24px;
+  text-transform: uppercase;
+  font-family   : theme('fontFamily.alt');
+  font-weight   : 700;
+
+  &.tab-active {
+    font-weight  : 900;
+    border-bottom: 2px solid theme('colors.sec');
+  }
 }
