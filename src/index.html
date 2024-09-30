@@ -72,10 +72,10 @@
     <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#contact">
       <div class="text-[15px] text-default">Контакты</div>
     </a>
-    <button class="btn btn-contur btn-sec/5 border-default/10 bg-none grow btn-sm px-3 text-default hover:text-sec">
+    <button class="btn btn-contur btn-sec/5 border-default/10 bg-none grow btn-sm px-3 text-default hover:text-sec" data-fancybox-modal data-src="dialog-payment.html">
       <div class="text-[15px] ">Оплата услуг</div>
     </button>
-    <button class="btn btn-contur btn-sec/5 border-default/10 bg-none grow btn-sm px-3 text-default hover:text-sec">
+    <button class="btn btn-contur btn-sec/5 border-default/10 bg-none grow btn-sm px-3 text-default hover:text-sec" data-fancybox-modal data-src="dialog-oferta.html">
       <div class="text-[15px] ">Документооборот</div>
     </button>
     <button class="btn btn-fill btn-sec grow btn-sm">
@@ -128,10 +128,10 @@
   <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm px-3" data-scroll href="/#contact">
     <div class="text-[15px] text-default">Контакты</div>
   </a>
-  <button class="btn btn-contur btn-sec/5 border-default/10 bg-none grow btn-sm px-3 text-default hover:text-sec">
+  <button class="btn btn-contur btn-sec/5 border-default/10 bg-none grow btn-sm px-3 text-default hover:text-sec" data-fancybox-modal data-src="dialog-payment.html">
     <div class="text-[15px] ">Оплата услуг</div>
   </button>
-  <button class="btn btn-contur btn-sec/5 border-default/10 bg-none grow btn-sm px-3 text-default hover:text-sec">
+  <button class="btn btn-contur btn-sec/5 border-default/10 bg-none grow btn-sm px-3 text-default hover:text-sec" data-fancybox-modal data-src="dialog-oferta.html">
     <div class="text-[15px] ">Документооборот</div>
   </button>
   <button class="btn btn-fill btn-sec grow btn-sm px-3">
@@ -421,6 +421,12 @@
     </div>
     <% } %>
   </div>
+
+  <div class="mt-8 flex">
+    <a href="https://t.me/arc_portfolio" target="_blank" class="btn btn-sec btn-fill mx-auto">
+      <span class="font-bold">Смотреть все результаты</span>
+    </a>
+  </div>
 </section>
 
 <script>
@@ -552,20 +558,23 @@
   <a href="/#top" data-scroll class="footer-logo">
     <img src="img/logo-light.svg" alt="">
   </a>
-  <div class="opacity-60">ИП Токарев Дмитрий Сергеевич</div>
-  <div class="opacity-60">
+  <div class="opacity-60 text-sm">ИП Токарев Дмитрий Сергеевич</div>
+  <div class="opacity-60 text-sm">
     ИНН 232509214902 <br>
     ОГРНИП 322237500283845
   </div>
 
+  <div class="flex flex-col items-start">
+    <a href="dialog-oferta.html" data-fancybox-modal class="btn text-sm btn-text btn-[#e1952b] border-b border-dashed border-[#e1952b]/30">Публичная оферта</a>
+    <a href="dialog-form.html" data-fancybox-modal class="btn text-sm btn-text btn-[#e1952b] border-b border-dashed border-[#e1952b]/30">Получить пакет документов</a>
+  </div>
+
   <a href="javascript:;" class="btn btn-text hover-underline">
     <div class="absolute -inset-5"></div>
-    Разработка: Студия К.И.Т
+    <span class="text-sm">
+      Разработка: Студия К.И.Т
+    </span>
   </a>
 </footer>
-
-<script>
-  Fancybox.modal.open('dialog-payment.html')
-</script>
 
 <%= require('./html-includes/footer.html')() %>

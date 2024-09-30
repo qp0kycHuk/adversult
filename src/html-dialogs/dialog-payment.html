@@ -1,8 +1,8 @@
 <div class="dialog-payment dialog" data-tab-cover>
-  <div class="title text-center mb-12 sm:text-5xl">
+  <div class="title text-center mb-6 sm:mb-12 sm:text-5xl">
     варианты оплаты
   </div>
-  <div class="tabs mb-12">
+  <div class="tabs mb-6 sm:mb-12">
     <button class="tab grow tab-active" data-tab-link="1">по карте</button>
     <button class="tab grow" data-tab-link="2">по счету</button>
   </div>
@@ -52,10 +52,13 @@
         </button>
 
       </div>
-      <a href="javascript:;" class="sm:ml-auto text-xs opacity-60 hover:underline mt-10 block">
-        Отправляя форму, Вы даете согласие
-        на обработку Ваших <br> персональных данных
-      </a>
+      <div class="flex items-center gap-3 mt-10">
+        <input type="checkbox" class="checkbox rounded" checked required>
+        <a href="dialog-oferta.html" data-fancybox-modal class="text-xs opacity-60 hover:underline block">
+          Принимаю согласие по оферте и оказываемым услугам <br>
+          (с офертой ознакомлен)
+        </a>
+      </div>
     </div>
     <div class="tab-content" data-tab-content="2">
       <div class="flex flex-col gap-6">
@@ -113,10 +116,13 @@
         </button>
 
       </div>
-      <a href="javascript:;" class="sm:ml-auto text-xs opacity-60 hover:underline mt-10 block">
-        Отправляя форму, Вы даете согласие
-        на обработку Ваших <br> персональных данных
-      </a>
+      <div class="flex items-center gap-3 mt-10">
+        <input type="checkbox" class="checkbox rounded" checked required>
+        <a href="dialog-oferta.html" data-fancybox-modal class="text-xs opacity-60 hover:underline block">
+          Принимаю согласие по оферте и оказываемым услугам <br>
+          (с офертой ознакомлен)
+        </a>
+      </div>
     </div>
   </div>
 </div>

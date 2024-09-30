@@ -159,8 +159,10 @@ body {
   }
 
   .input {
-    border-radius: 10px;
-    color        : theme('colors.black');
+    border-radius : 10px;
+    color         : theme('colors.black');
+    padding-top   : 0;
+    padding-bottom: 0;
   }
 }
 
@@ -716,6 +718,19 @@ body {
 .dialog-payment {
   padding: 48px 48px 64px;
   width  : 584px;
+
+  @media (max-width: theme('screens.sm')) {
+    padding: 32px 16px;
+  }
+}
+
+.dialog-oferta {
+  padding: 48px 48px 64px;
+  width  : 760px;
+
+  @media (max-width: theme('screens.sm')) {
+    padding: 32px 16px;
+  }
 }
 
 .menu {
@@ -778,6 +793,13 @@ body {
   text-transform: uppercase;
   font-family   : theme('fontFamily.alt');
   font-weight   : 700;
+
+  @media (max-width: theme('screens.sm')) {
+    font-size     : 18px;
+    padding-top   : 12px;
+    padding-bottom: 12px;
+
+  }
 
   &.tab-active {
     font-weight  : 900;
