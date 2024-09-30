@@ -29,21 +29,22 @@
         </label>
         <label class="block">
           <div class="font-semibold mb-2">
-            Дата оплаты
+            Цена
           </div>
-          <input type="text" class="input  w-full " is="air-datepicker">
+          <input type="number" class="input  w-full ">
         </label>
         <label class="block">
           <div class="font-semibold mb-2">
-            Платежная система
+            Дата оплаты
           </div>
-          <select class="input w-full">
-            <option value="">Платежная система 1</option>
-            <option value="">Платежная система 2</option>
-            <option value="">Платежная система 3</option>
-            <option value="">Платежная система 4</option>
-          </select>
+          <div class="relative">
+            <input type="text" class="input  w-full " is="air-datepicker">
+            <div class="absolute pointer-events-none right-4 top-1/2 -translate-y-1/2 opacity-40">
+              <c-icon class="icon" href="img/icons.svg#calendar"></c-icon>
+            </div>
+          </div>
         </label>
+
 
       </div>
       <div class="mt-8 ">
