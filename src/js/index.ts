@@ -1,7 +1,7 @@
 import showPass from './show-pass'
 import theme from './theme'
 import fancybox from './fancybox'
-import phonemask from './phonemask/phonemask'
+import mask from './mask/index'
 import scrollTo from './scrollTo'
 import tab from 'npm-kit-tab'
 import toggle from 'npm-kit-toggle'
@@ -11,6 +11,9 @@ import ymaps from './ymaps'
 import animations from './animations'
 
 import '../scss/index.scss'
+import ru from './mask/phone/ru'
+import passport from './mask/passport'
+import inn from './mask/inn'
 
 window.addEventListener('DOMContentLoaded', () => loadHandler())
 
@@ -22,7 +25,9 @@ function loadHandler() {
   ripple.init()
   theme.init()
   fancybox.init()
-  phonemask.init('[type="tel"]')
+  mask.init('[type="tel"]', ru)
+  mask.init('[data-mask="passport"]', passport)
+  mask.init('[data-mask="inn"]', inn)
 
   ripple.attach('.btn')
   ripple.attach('.waved')
