@@ -1,113 +1,5 @@
 <%= require('./html-includes/header.html')() %>
-<div id="top"></div>
-<header class="header">
-  <div class="flex items-center gap-3">
-    <button class="btn btn-text btn-sec lg:hidden" data-toggle-link="menu">
-      <c-icon class="icon" href="img/icons.svg#menu"></c-icon>
-    </button>
-    <a href="/#top" data-scroll class="header-logo">
-      <img src="img/logo.svg" alt="">
-    </a>
-  </div>
 
-  <a href="javascript:;" class="btn btn-text gap-2 hover-underline-wrapper max-lg:hidden">
-    <c-icon class="icon text-2xl text-primary " href="img/icons.svg#map-point"></c-icon>
-    <div class="font-medium hover-underline text-[15px]">г. Краснодар, ул. Северная 490</div>
-  </a>
-  <a href="javascript:;" class="btn btn-text gap-2 hover-underline-wrapper max-lg:hidden">
-    <c-icon class="icon text-2xl text-primary " href="img/icons.svg#email"></c-icon>
-    <div class="font-medium hover-underline text-[15px]">marketing_consulting@arverresult.store</div>
-  </a>
-
-  <div class="max-xs:hidden">
-    <div class="flex gap-2">
-      <button class="btn btn-text">
-        <img src="img/vk.svg" alt="" class="icon text-3.5xl">
-      </button>
-      <button class="btn btn-text">
-        <img src="img/telegram.svg" alt="" class="icon text-3.5xl">
-      </button>
-      <button class="btn btn-text">
-        <img src="img/instagram.svg" alt="" class="icon text-3.5xl">
-      </button>
-    </div>
-  </div>
-
-  <a href="javascript:;" class="btn btn-text hover-underline">
-    <span class="font-alt text-xl sm:text-3xl font-black">8 900 000 18 49</span>
-  </a>
-</header>
-
-<div class="menu" id="menu" data-toggle-cover>
-  <div class="header px-4">
-    <div class="flex items-center gap-3">
-      <button class="btn btn-text btn-sec" data-toggle-link="menu">
-        <c-icon class="icon" href="img/icons.svg#cross"></c-icon>
-      </button>
-      <a href="javascript:;" class="header-logo">
-        <img src="img/logo.svg" alt="">
-      </a>
-    </div>
-
-    <button class="btn btn-text hover-underline">
-      <span class="font-alt text-xl font-black">8 900 000 18 49</span>
-    </button>
-  </div>
-  <div class="p-4 flex flex-col gap-4">
-    <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#top">
-      <div class="text-[15px] text-default">Главная</div>
-    </a>
-    <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#about">
-      <div class="text-[15px] text-default">О компании</div>
-    </a>
-    <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#service">
-      <div class="text-[15px] text-default">Услуги</div>
-    </a>
-    <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#reviews">
-      <div class="text-[15px] text-default">Портфолио</div>
-    </a>
-    <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#pray">
-      <div class="text-[15px] text-default">Расчет стоимости</div>
-    </a>
-    <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#contact">
-      <div class="text-[15px] text-default">Контакты</div>
-    </a>
-    <button class="btn btn-contur btn-sec/5 border-default/10 bg-none grow btn-sm px-3 text-default hover:text-sec" data-fancybox-modal data-src="dialog-payment.html">
-      <div class="text-[15px] ">Оплата услуг</div>
-    </button>
-    <button class="btn btn-contur btn-sec/5 border-default/10 bg-none grow btn-sm px-3 text-default hover:text-sec" data-fancybox-modal data-src="dialog-oferta.html">
-      <div class="text-[15px] ">Документооборот</div>
-    </button>
-    <button class="btn btn-fill btn-sec grow btn-sm">
-      <div class="text-[15px] font-bold">Обратная связь</div>
-    </button>
-  </div>
-  <div class="mt-auto"></div>
-  <div class="mt-10 px-4 flex flex-col gap-3">
-    <a href="javascript:;" class="btn btn-text gap-2 hover-underline-wrapper justify-start">
-      <c-icon class="icon text-2xl text-primary " href="img/icons.svg#map-point"></c-icon>
-      <div class="font-medium hover-underline text-[15px]">г. Краснодар, ул. Северная 490</div>
-    </a>
-    <a href="javascript:;" class="btn btn-text gap-2 hover-underline-wrapper justify-start">
-      <c-icon class="icon text-2xl text-primary " href="img/icons.svg#email"></c-icon>
-      <div class="font-medium hover-underline text-[15px]">marketing_consulting@arverresult.store</div>
-    </a>
-  </div>
-  <div class="mt-10 px-4">
-    <div class="flex gap-6">
-      <button class="btn btn-text">
-        <img src="img/vk.svg" alt="" class="icon text-5xl">
-      </button>
-      <button class="btn btn-text">
-        <img src="img/telegram.svg" alt="" class="icon text-5xl">
-      </button>
-      <button class="btn btn-text">
-        <img src="img/instagram.svg" alt="" class="icon text-5xl">
-      </button>
-    </div>
-  </div>
-</div>
-<div class="menu-shadow"></div>
 
 <section class="nav max-lg:hidden">
   <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm px-3" data-scroll href="/#top">
@@ -143,8 +35,8 @@
   <section class="started">
     <div class="started-image">
       <picture>
-        <source media="(min-width: 1199.98px)" srcset="img/started.png">
-        <img src="img/started-sm.png" alt="">
+        <source media="(min-width: 1199.98px)" srcset="/img/started.png">
+        <img src="/img/started-sm.png" alt="">
       </picture>
     </div>
     <div class="started-content">
@@ -170,8 +62,8 @@
   <section class="about rounded-section" id="about">
     <div class="about-image">
       <picture>
-        <source media="(min-width: 1199.98px)" srcset="img/about.png">
-        <img src="img/about-sm.png" alt="">
+        <source media="(min-width: 1199.98px)" srcset="/img/about.png">
+        <img src="/img/about-sm.png" alt="">
       </picture>
     </div>
     <div class="about-content">
@@ -208,11 +100,11 @@
     <% for(let i = 0; i < 3; i++) { %>
     <div class="service-item" data-animation="fadeInUp" data-delay="<%= (i % 3) * 0.05 %>">
       <div class="service-item-image ratio ratio-[390/256]">
-        <img src="img/test.gif" alt="" class="absolute-fit object-cover">
+        <img src="/img/test.gif" alt="" class="absolute-fit object-cover">
       </div>
       <div class="service-item-content">
         <div class="flex items-center gap-2 mb-3">
-          <c-icon class="icon text-2xl opacity-40" href="img/icons.svg#widjet"></c-icon>
+          <c-icon class="icon text-2xl opacity-40" href="/img/icons.svg#widjet"></c-icon>
           <div class="opacity-40 font-medium">5 услуг</div>
         </div>
         <div class="font-alt text-2xl/xs sm:text-3xl/xs font-black uppercase">
@@ -235,10 +127,10 @@
 
   <div class="process-grid grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-7">
     <div class="process-item process-item-1 row-span-2" data-animation="fadeInUp">
-      <img src="img/process-1.png" alt="">
+      <img src="/img/process-1.png" alt="">
       <div class="process-item-content">
         <div class="flex items-center gap-2 mb-3">
-          <c-icon class="icon text-2xl opacity-40" href="img/icons.svg#widjet"></c-icon>
+          <c-icon class="icon text-2xl opacity-40" href="/img/icons.svg#widjet"></c-icon>
           <div class="opacity-40 font-medium">5 услуг</div>
         </div>
         <div class="font-alt text-2xl/xs sm:text-3xl/xs font-black uppercase">
@@ -255,7 +147,7 @@
     <div class="process-item process-item-2" data-animation="fadeInUp">
       <div class="process-item-content">
         <div class="flex items-center gap-2 mb-3">
-          <c-icon class="icon text-2xl opacity-40" href="img/icons.svg#widjet"></c-icon>
+          <c-icon class="icon text-2xl opacity-40" href="/img/icons.svg#widjet"></c-icon>
           <div class="opacity-40 font-medium">5 услуг</div>
         </div>
         <div class="font-alt text-2xl/xs sm:text-3xl/xs font-black uppercase">
@@ -270,10 +162,10 @@
       </div>
     </div>
     <div class="process-item process-item-4 row-span-2" data-animation="fadeInUp">
-      <img src="img/process-4.png" alt="">
+      <img src="/img/process-4.png" alt="">
       <div class="process-item-content">
         <div class="flex items-center gap-2 mb-3">
-          <c-icon class="icon text-2xl opacity-40" href="img/icons.svg#widjet"></c-icon>
+          <c-icon class="icon text-2xl opacity-40" href="/img/icons.svg#widjet"></c-icon>
           <div class="opacity-40 font-medium">5 услуг</div>
         </div>
         <div class="font-alt text-2xl/xs sm:text-3xl/xs font-black uppercase">
@@ -290,7 +182,7 @@
     <div class="process-item process-item-3" data-animation="fadeInUp">
       <div class="process-item-content">
         <div class="flex items-center gap-2 mb-3">
-          <c-icon class="icon text-2xl opacity-40" href="img/icons.svg#widjet"></c-icon>
+          <c-icon class="icon text-2xl opacity-40" href="/img/icons.svg#widjet"></c-icon>
           <div class="opacity-40 font-medium">5 услуг</div>
         </div>
         <div class="font-alt text-2xl/xs sm:text-3xl/xs font-black uppercase">
@@ -321,7 +213,7 @@
         <div class="flex flex-col gap-2.5">
           <% for(let i = 0; i < 3; i++) { %>
           <div class="flex items-center gap-2">
-            <c-icon class="icon text-[#20AC19]" href="img/icons.svg#circle-check"></c-icon>
+            <c-icon class="icon text-[#20AC19]" href="/img/icons.svg#circle-check"></c-icon>
             <div class="">Анализ текущей ситуации</div>
           </div>
           <% } %>
@@ -342,7 +234,7 @@
         <div class="flex flex-col gap-2.5">
           <% for(let i = 0; i < 3; i++) { %>
           <div class="flex items-center gap-2">
-            <c-icon class="icon text-[#20AC19]" href="img/icons.svg#circle-check"></c-icon>
+            <c-icon class="icon text-[#20AC19]" href="/img/icons.svg#circle-check"></c-icon>
             <div class="">Анализ текущей ситуации</div>
           </div>
           <% } %>
@@ -355,7 +247,7 @@
     </div>
     <div class="consalting-item bg-[#F9D3B7]" data-animation="fadeInUp" data-delay="0.1">
       <div class="consalting-item-header bg-[#FFEDDF] bg-opacity-50">
-        <c-icon class="icon text-orange text-2xl" href="img/icons.svg#crown"></c-icon>
+        <c-icon class="icon text-orange text-2xl" href="/img/icons.svg#crown"></c-icon>
         <div class="font-alt text-2xl/xs sm:text-3xl/xs font-black uppercase">
           Базовый пакет
         </div>
@@ -364,7 +256,7 @@
         <div class="flex flex-col gap-2.5">
           <% for(let i = 0; i < 3; i++) { %>
           <div class="flex items-center gap-2">
-            <c-icon class="icon text-[#20AC19]" href="img/icons.svg#circle-check"></c-icon>
+            <c-icon class="icon text-[#20AC19]" href="/img/icons.svg#circle-check"></c-icon>
             <div class="">Анализ текущей ситуации</div>
           </div>
           <% } %>
@@ -400,7 +292,7 @@
             <div class="swiper-slide w-11/12 max-sm:max-w-96 sm:w-5/12 md:w-1/3 px-1.5 lg:px-3.5">
               <div class="reviews-item">
                 <div class="ratio ratio-[374/536] reviews-item-image">
-                  <img src="img/test.gif" alt="" class="absolute-fit object-cover">
+                  <img src="/img/test.gif" alt="" class="absolute-fit object-cover">
                 </div>
               </div>
             </div>
@@ -409,12 +301,12 @@
         </div>
         <div class="absolute top-1/2 -translate-y-1/2 right-full mr-15 max-md:hidden">
           <button class="btn btn-icon !bg-l2 rounded-full btn-lg reviews-slider-prev">
-            <c-icon class="icon" href="img/icons.svg#to-left"></c-icon>
+            <c-icon class="icon" href="/img/icons.svg#to-left"></c-icon>
           </button>
         </div>
         <div class="absolute top-1/2 -translate-y-1/2 left-full ml-15 max-md:hidden">
           <button class="btn btn-icon !bg-l2 rounded-full btn-lg reviews-slider-next">
-            <c-icon class="icon" href="img/icons.svg#to-right"></c-icon>
+            <c-icon class="icon" href="/img/icons.svg#to-right"></c-icon>
           </button>
         </div>
       </div>
@@ -444,11 +336,11 @@
 <section class="video lg:px-0 bg-l3 pb-12" id="video">
   <div class="title mb-5 lg:hidden" data-animation="fadeInUp">видео о нас</div>
   <a href="https://youtu.be/rSDoXnslLsg" data-animation="fadeInUp" data-fancybox class="video-block rounded-section ratio ratio-4/3 sm:ratio-16/9 lg:ratio-[1824/784] px-0 block">
-    <img src="img/video.jpg" alt="" class="absolute-fit object-cover">
+    <img src="/img/video.jpg" alt="" class="absolute-fit object-cover">
 
     <div class="absolute-fit video-content">
       <button class="btn h-auto p-0  rounded-full">
-        <img src="img/video-button.svg" alt="" class="max-lg:w-36">
+        <img src="/img/video-button.svg" alt="" class="max-lg:w-36">
       </button>
       <div class="title mt-4 max-lg:hidden">видео о нас</div>
     </div>
@@ -494,7 +386,7 @@
     </div>
     <div class="pray-review" data-animation="fadeInUp">
       <div class="flex items-center gap-4">
-        <img src="img/logo-min.svg" alt="" class="icon text-2.5xl sm:text-4.5xl">
+        <img src="/img/logo-min.svg" alt="" class="icon text-2.5xl sm:text-4.5xl">
         <div class="font-bold text-lg sm:text-2xl">Что говорят наши клиенты</div>
       </div>
       <div class="my-4 sm:my-8 border-t border-default/20"></div>
@@ -507,16 +399,16 @@
       <div class="mt-20"></div>
       <div class="mt-auto flex items-center gap-4">
         <div class="size-14 bg-l3 rounded-full flex">
-          <c-icon class="icon text-sec text-2xl m-auto" href="img/icons.svg#user"></c-icon>
+          <c-icon class="icon text-sec text-2xl m-auto" href="/img/icons.svg#user"></c-icon>
         </div>
         <div>
           <div class="font-bold">Игорь Николаевич</div>
           <div class="flex gap-1">
-            <c-icon class="icon text-[#E7AF36]" href="img/icons.svg#star"></c-icon>
-            <c-icon class="icon text-[#E7AF36]" href="img/icons.svg#star"></c-icon>
-            <c-icon class="icon text-[#E7AF36]" href="img/icons.svg#star"></c-icon>
-            <c-icon class="icon text-[#E7AF36]" href="img/icons.svg#star"></c-icon>
-            <c-icon class="icon text-[#E7AF36]" href="img/icons.svg#star"></c-icon>
+            <c-icon class="icon text-[#E7AF36]" href="/img/icons.svg#star"></c-icon>
+            <c-icon class="icon text-[#E7AF36]" href="/img/icons.svg#star"></c-icon>
+            <c-icon class="icon text-[#E7AF36]" href="/img/icons.svg#star"></c-icon>
+            <c-icon class="icon text-[#E7AF36]" href="/img/icons.svg#star"></c-icon>
+            <c-icon class="icon text-[#E7AF36]" href="/img/icons.svg#star"></c-icon>
           </div>
         </div>
       </div>
@@ -529,21 +421,21 @@
   <div class="title sm:text-center mb-6 sm:mb-14" data-animation="fadeInUp">наши контакты</div>
   <div class="contact-grid gap-4 sm:gap-7">
     <a href="javascript:;" class="contact-item" data-animation="fadeInUp">
-      <c-icon class="icon text-3.5xl sm:text-4.5xl text-[#FFCA57]" href="img/icons.svg#building"></c-icon>
+      <c-icon class="icon text-3.5xl sm:text-4.5xl text-[#FFCA57]" href="/img/icons.svg#building"></c-icon>
       <div>
         <div class="opacity-60 max-sm:text-sm">Адрес офиса</div>
         <div class="font-alt font-black sm:text-xl uppercase">г. Краснодар, ул. Северная 490</div>
       </div>
     </a>
     <a href="javascript:;" class="contact-item max-lg:col-span-full max-lg:order-10" data-animation="fadeInUp" data-delay="0.05">
-      <c-icon class="icon text-3.5xl sm:text-4.5xl text-[#449BFF]" href="img/icons.svg#email"></c-icon>
+      <c-icon class="icon text-3.5xl sm:text-4.5xl text-[#449BFF]" href="/img/icons.svg#email"></c-icon>
       <div>
         <div class="opacity-60 max-sm:text-sm">E-mail</div>
         <div class="font-alt font-black sm:text-xl uppercase">marketing_consulting@arverresult.store</div>
       </div>
     </a>
     <a href="javascript:;" class="contact-item grow" data-animation="fadeInUp" data-delay="0.1">
-      <c-icon class="icon text-3.5xl sm:text-4.5xl text-[#68E47F]" href="img/icons.svg#phone"></c-icon>
+      <c-icon class="icon text-3.5xl sm:text-4.5xl text-[#68E47F]" href="/img/icons.svg#phone"></c-icon>
       <div>
         <div class="opacity-60 max-sm:text-sm">Телефон</div>
         <div class="font-alt font-black sm:text-xl uppercase">+7(900)000-18-49</div>
@@ -554,31 +446,5 @@
 
 <div class="map" id="map"></div>
 
-<footer class="footer">
-  <a href="/#top" data-scroll class="footer-logo">
-    <img src="img/logo-light.svg" alt="">
-  </a>
-  <div class="opacity-60 text-sm">ИП Токарев Дмитрий Сергеевич</div>
-  <div class="opacity-60 text-sm">
-    ИНН 232509214902 <br>
-    ОГРНИП 322237500283845
-  </div>
-
-  <div class="flex flex-col items-start">
-    <a href="dialog-oferta.html" data-fancybox-modal class="btn text-sm btn-text btn-[#e1952b] border-b border-dashed border-[#e1952b]/30">Публичная оферта</a>
-    <a href="dialog-form.html" data-fancybox-modal class="btn text-sm btn-text btn-[#e1952b] border-b border-dashed border-[#e1952b]/30">Получить пакет документов</a>
-  </div>
-
-  <a href="javascript:;" class="btn btn-text hover-underline">
-    <div class="absolute -inset-5"></div>
-    <span class="text-sm">
-      Разработка: Студия К.И.Т
-    </span>
-  </a>
-</footer>
-
-<script>
-  Fancybox.modal.open('dialog-payment.html')
-</script>
 
 <%= require('./html-includes/footer.html')() %>

@@ -13,3 +13,112 @@
 </head>
 
 <body>
+  <div id="top"></div>
+  <header class="header">
+    <div class="flex items-center gap-3">
+      <button class="btn btn-text btn-sec lg:hidden" data-toggle-link="menu">
+        <c-icon class="icon" href="/img/icons.svg#menu"></c-icon>
+      </button>
+      <a href="/#top" data-scroll class="header-logo">
+        <img src="/img/logo.svg" alt="">
+      </a>
+    </div>
+
+    <a href="javascript:;" class="btn btn-text gap-2 hover-underline-wrapper max-lg:hidden">
+      <c-icon class="icon text-2xl text-primary " href="/img/icons.svg#map-point"></c-icon>
+      <div class="font-medium hover-underline text-[15px]">г. Краснодар, ул. Северная 490</div>
+    </a>
+    <a href="javascript:;" class="btn btn-text gap-2 hover-underline-wrapper max-lg:hidden">
+      <c-icon class="icon text-2xl text-primary " href="/img/icons.svg#email"></c-icon>
+      <div class="font-medium hover-underline text-[15px]">marketing_consulting@arverresult.store</div>
+    </a>
+
+    <div class="max-xs:hidden">
+      <div class="flex gap-2">
+        <button class="btn btn-text">
+          <img src="/img/vk.svg" alt="" class="icon text-3.5xl">
+        </button>
+        <button class="btn btn-text">
+          <img src="/img/telegram.svg" alt="" class="icon text-3.5xl">
+        </button>
+        <button class="btn btn-text">
+          <img src="/img/instagram.svg" alt="" class="icon text-3.5xl">
+        </button>
+      </div>
+    </div>
+
+    <a href="javascript:;" class="btn btn-text hover-underline">
+      <span class="font-alt text-xl sm:text-3xl font-black">8 900 000 18 49</span>
+    </a>
+  </header>
+
+  <div class="menu" id="menu" data-toggle-cover>
+    <div class="header px-4">
+      <div class="flex items-center gap-3">
+        <button class="btn btn-text btn-sec" data-toggle-link="menu">
+          <c-icon class="icon" href="/img/icons.svg#cross"></c-icon>
+        </button>
+        <a href="javascript:;" class="header-logo">
+          <img src="/img/logo.svg" alt="">
+        </a>
+      </div>
+
+      <button class="btn btn-text hover-underline">
+        <span class="font-alt text-xl font-black">8 900 000 18 49</span>
+      </button>
+    </div>
+    <div class="p-4 flex flex-col gap-4">
+      <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#top">
+        <div class="text-[15px] text-default">Главная</div>
+      </a>
+      <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#about">
+        <div class="text-[15px] text-default">О компании</div>
+      </a>
+      <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#service">
+        <div class="text-[15px] text-default">Услуги</div>
+      </a>
+      <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#reviews">
+        <div class="text-[15px] text-default">Портфолио</div>
+      </a>
+      <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#pray">
+        <div class="text-[15px] text-default">Расчет стоимости</div>
+      </a>
+      <a class="btn btn-fill btn-primary/5 bg-[#E5EAF1] grow btn-sm" data-scroll data-toggle-link href="/#contact">
+        <div class="text-[15px] text-default">Контакты</div>
+      </a>
+      <button class="btn btn-contur btn-sec/5 border-default/10 bg-none grow btn-sm px-3 text-default hover:text-sec" data-fancybox-modal data-src="dialog-payment.html">
+        <div class="text-[15px] ">Оплата услуг</div>
+      </button>
+      <button class="btn btn-contur btn-sec/5 border-default/10 bg-none grow btn-sm px-3 text-default hover:text-sec" data-fancybox-modal data-src="dialog-oferta.html">
+        <div class="text-[15px] ">Документооборот</div>
+      </button>
+      <button class="btn btn-fill btn-sec grow btn-sm">
+        <div class="text-[15px] font-bold">Обратная связь</div>
+      </button>
+    </div>
+    <div class="mt-auto"></div>
+    <div class="mt-10 px-4 flex flex-col gap-3">
+      <a href="javascript:;" class="btn btn-text gap-2 hover-underline-wrapper justify-start">
+        <c-icon class="icon text-2xl text-primary " href="/img/icons.svg#map-point"></c-icon>
+        <div class="font-medium hover-underline text-[15px]">г. Краснодар, ул. Северная 490</div>
+      </a>
+      <a href="javascript:;" class="btn btn-text gap-2 hover-underline-wrapper justify-start">
+        <c-icon class="icon text-2xl text-primary " href="/img/icons.svg#email"></c-icon>
+        <div class="font-medium hover-underline text-[15px]">marketing_consulting@arverresult.store</div>
+      </a>
+    </div>
+    <div class="mt-10 px-4">
+      <div class="flex gap-6">
+        <button class="btn btn-text">
+          <img src="/img/vk.svg" alt="" class="icon text-5xl">
+        </button>
+        <button class="btn btn-text">
+          <img src="/img/telegram.svg" alt="" class="icon text-5xl">
+        </button>
+        <button class="btn btn-text">
+          <img src="/img/instagram.svg" alt="" class="icon text-5xl">
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="menu-shadow"></div>
