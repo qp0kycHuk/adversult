@@ -1,5 +1,5 @@
-const regexp = /(\d{0,4})(\d{0,4})/
-const completeRegexp = /\d{8}$/
+const regexp = /(\d{0,4})(\d{0,6})/
+const completeRegexp = /\d{10}$/
 
 export function getUnmaskedValue(value: string) {
   return value.replace(/\D/g, '')
