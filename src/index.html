@@ -93,6 +93,35 @@
   </section>
 </div>
 
+<section class="counter">
+  <% for(let i = 0; i < 1; i++) { %>
+  <div class="counter-item" data-animation="fadeInUp">
+    <div class="counter-item-letter" data-animation="fadeIn" data-delay="0.5"> a </div>
+    <div class="counter-item-content">
+      <div class="font-alt counter-item-title">Более <span class="counter-item-value inline-block">1000</span></div>
+      <div class="font-medium">окупившихся клиентов</div>
+    </div>
+  </div>
+  <div class="counter-item" data-animation="fadeInUp" data-delay="0.05">
+    <div class="counter-item-letter" data-animation="fadeIn" data-delay="0.55"> r </div>
+    <div class="counter-item-content">
+      <div class="font-alt counter-item-title">Более <span class="counter-item-value inline-block">2000</span></div>
+      <div class="font-medium">клиентов с ARC</div>
+    </div>
+  </div>
+  <div class="counter-item" data-animation="fadeInUp" data-delay="0.1">
+    <div class="counter-item-letter" data-animation="fadeIn" data-delay="0.6"> c </div>
+    <div class="counter-item-content">
+      <div class="font-alt counter-item-title"><span class="counter-item-value inline-block">5</span> лет</div>
+      <div class="font-medium">
+        успешной и результативной <br>
+        работы
+      </div>
+    </div>
+  </div>
+  <% } %>
+</section>
+
 <section class="p-section service" id="service">
   <div class="title sm:text-center mb-6 sm:mb-12" data-animation="fadeInUp">Маркетинговое сопровождение</div>
 

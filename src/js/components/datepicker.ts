@@ -45,8 +45,7 @@ function register() {
   document.addEventListener('DOMContentLoaded', () => {
     polyfill(document.body)
 
-    const observer = new MutationObserver((mutations, b) => {
-      console.log(mutations, b)
+    const observer = new MutationObserver((mutations) => {
       mutations.forEach((record) => {
         polyfill(record.target as HTMLElement)
       })

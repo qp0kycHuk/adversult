@@ -1,5 +1,6 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { throttle } from './throttle'
 
 const gsapAnimation: Record<string, any> = {
   fadeInLeft: {
@@ -61,6 +62,41 @@ function init() {
       )
     })
   }
+
+  // counter
+  const items = document.querySelectorAll('.counter-item')
+
+  items.forEach((item) => {
+    const value = item.querySelector<HTMLElement>('.counter-item-value')
+
+    if (!value) return
+    const count = parseInt(value.textContent || '0')
+
+    const instance = gsap.to(value, {
+      duration: 2,
+      ease: 'power2.out',
+
+      scrollTrigger: {
+        trigger: item,
+        toggleActions: 'play reverse play reverse',
+
+        // scrub: true,
+        // markers: true,
+        // id: "scrub"
+      },
+
+      onUpdate: throttle(() => {
+        value.setAttribute('data-value', Math.floor(count * instance.progress()).toString())
+      }, 1000 / 30),
+      onComplete() {
+        value.setAttribute('data-value', count.toString())
+      },
+    })
+
+    instance.then(() => {
+      value.setAttribute('data-value', count.toString())
+    })
+  })
 }
 
 function scrollInit() {
