@@ -687,6 +687,7 @@ body {
   &-content {
     background   : #EEF3FA;
     padding      : 32px;
+    padding-right: 10px;
     border-radius: 40px 0 0 40px;
 
     @media (max-width: theme('screens.lg')) {
@@ -713,6 +714,15 @@ body {
       padding: 32px 16px;
     }
   }
+
+
+}
+
+.dialog-inside .dialog-service-form {
+  background:
+    url("../img/dialog-inside-bg.jpg") no-repeat center / cover,
+    linear-gradient(225deg, #37C3FF 0%, #3F63FF 22.94%, #CF41FF 66%, #0C1663 92.09%);
+
 }
 
 .dialog-payment {
@@ -895,5 +905,28 @@ body {
         text-align: left;
       }
     }
+  }
+}
+
+.floating-button {
+  position     : fixed;
+  bottom       : 20px;
+  right        : 20px;
+  background   : url("../img/floating-button-bg.jpg") no-repeat center / cover;
+  padding      : 0 16px;
+  padding-right: 56px;
+  display      : flex;
+  align-items  : center;
+  color        : #fff;
+  gap          : 12px;
+  z-index      : 5;
+  border-radius: 100px;
+  cursor       : pointer;
+  box-shadow   : 0 8px 20px 0 #FA7D8666;
+
+
+  @media (max-width: theme('screens.lg')) {
+    padding-left : 10px;
+    padding-right: 32px;
   }
 }
